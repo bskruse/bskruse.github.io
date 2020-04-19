@@ -18,13 +18,14 @@
     </div>
 	
 	<div id="majorTable"></div>
-	
+</body>
+
 	<script type="text/x-handlebars-template" id="tableTemplate">
 		<table class="table table-striped">
 			<tr><th>Name</th><th>Major</th><th>Midterm</th><th>Final</th></tr>
 				{{#each rows}}
 					<tr>
-						<td>{{student}}</td><td>{{major}}</td><td>{{midterm}}</td><td>{{final}}</td>
+						<td>{{name}}</td><td>{{major}}</td><td>{{midterm}}</td><td>{{final}}</td>
 					</tr>
 				{{/each}}
 		</table>
@@ -58,6 +59,11 @@
 			request.send(null);
 		}
 	</script>
-</body>
 	
 </html>
+
+
+
+
+
+
